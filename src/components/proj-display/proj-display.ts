@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './proj-display.css',
 })
 export class ProjDisplay {
+  @Input() number: number = 2;
   @Input() name!: string;
   @Input() date!: string;
   @Input() description!: string;

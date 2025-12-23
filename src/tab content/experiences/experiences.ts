@@ -33,4 +33,31 @@ export class Experiences {
       content: ['Collaborate with 5 members on UX research and iterative prototyping for the CTA Ventra App', 'Design and prototype low- and mid-fidelity frames, and information architectures via Figma ']
     }
   ]
+
+  extracurricular_cards = [ 
+    {
+      title: 'Active Member',
+      company: 'Alpha Omega Epsilon',
+      date: 'November 2025 - Present',
+      content: []
+    }, 
+    {
+      title: 'Outreach Member',
+      company: 'HackIllinois',
+      date: 'September 2025 - Present',
+      content: []
+    },
+    {
+      title: 'Corporate Committee Member',
+      company: 'Women in Computer Science',
+      date: 'September 2024 - May 2025',
+      content: []
+    }, 
+    { 
+      title: 'Teacher Assistant',
+      company: 'Everyone Can Code',
+      date: 'June 2024 - August 2024',
+      content: []
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 <div class="main">
-    <h1 text-align="center">Software Experience</h1>
+    <h1 class="header">Software Experience</h1>
     <div *ngFor="let card of software_cards" class="card-container">
         <app-card class="card" 
         [title]="card.title" 
@@ -8,7 +8,7 @@
         [content]="card.content"
         ></app-card>
     </div>
-    <h1>Design Experience</h1>
+    <h1 class="header">Design Experience</h1>
     <div *ngFor="let card of design_cards" class="card-container">
         <app-card class="card" 
         [title]="card.title" 
@@ -16,5 +16,14 @@
         [date]="card.date" 
         [content]="card.content"
         ></app-card>
+    </div>
+    <h1 class="header">Extracurriculars</h1>
+    <div *ngFor="let card of extracurricular_cards" class="card-container">
+        <app-card class="card" 
+        [title]="card.title" 
+        [company]="card.company"
+        [date]="card.date" 
+        [content]="card.content"
+        ></app-card>    
     </div>
 </div>

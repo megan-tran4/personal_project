@@ -12,6 +12,17 @@ import { CarouselModule } from 'primeng/carousel';
 export class Projects {
 
   // group all projects - make filter button to filter by category
+  tech_projects = [
+    {
+      number: 1,
+      title: 'Kalcom',
+      date: 'Dec 2023',
+      description: 'This app aimes to streamline the call light system by allowing patients to make more specific requests. This app includes icons for accessibility to those who may not be fluent in English.',
+      tools: ['XCode', 'Firebase', 'Figma'],
+      images: ['images/kalcom-1.jpeg', 'images/IMG_8176.png']
+    }
+  ]
+  
   design_projects = [
     {
       title: 'CTA Ventra Remake',
