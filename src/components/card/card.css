@@ -1,0 +1,14 @@
+.card {
+    width: 800px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    white-space: wrap;   
+}
+
+.card-body {
+    padding: 30px;
+    text-align: left;
+}

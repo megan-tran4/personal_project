@@ -1,0 +1,10 @@
+.mat-tab-labels {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main {
+    width: 100%;
+    white-space: nowrap;       
+}
+

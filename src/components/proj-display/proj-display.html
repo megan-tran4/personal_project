@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-body">
+            <h1 class="card-title">{{ name }}</h1>
+            <h3 class="card-date">{{ date }}</h3>
+            <p class="card-tools"> <b>Frameworks & Tools:</b> {{ tools.join(', ') }}</p>
+            <p class="card-text"> <b>Description:</b> {{ description }}</p>
+            <!--<p> {{images | json}}</p>-->
+            <p-carousel class="card-image"
+                [value]="images"
+                [numVisible]="2"
+                [circular]="true"
+                [autoplayInterval]="5000" >
+                <ng-template pTemplate="item" let-item>
+                    <img [src]="item" [alt]="'Image ' + (images.indexOf(item) + 1)"/>
+
+                </ng-template>
+            </p-carousel>
+    </div>
+</div> 

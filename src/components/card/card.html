@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-body">
+            <h1 class="card-title">{{ title }}</h1>
+            <h2 class="card-subtitle">{{ company }}</h2>
+            <h3 class="card-date">{{ date }}</h3>
+            <ul class="card-description">
+                <li *ngFor="let item of content">
+                    {{ item }}
+                </li>
+            </ul>
+    </div>
+</div> 
