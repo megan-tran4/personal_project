@@ -1,15 +1,17 @@
 <div class="card">
     <div class="card-body">
+        <button (click)="computerStarts()">Computer Starts</button>
+        <button (click)="resetGame()">Person Starts</button>
         <div class="board">
-            <div class="tile" (click)="this.makeMove(0)">{{this.options[this.board[0]]}}</div>
-            <div class="tile" (click)="this.makeMove(1)">{{this.options[this.board[1]]}}</div>
-            <div class="tile" (click)="this.makeMove(2)">{{this.options[this.board[2]]}}</div>
-            <div class="tile" (click)="this.makeMove(3)">{{this.options[this.board[3]]}}</div>
-            <div class="tile" (click)="this.makeMove(4)">{{this.options[this.board[4]]}}</div>
-            <div class="tile" (click)="this.makeMove(5)">{{this.options[this.board[5]]}}</div>
-            <div class="tile" (click)="this.makeMove(6)">{{this.options[this.board[6]]}}</div>
-            <div class="tile" (click)="this.makeMove(7)">{{this.options[this.board[7]]}}</div>
-            <div class="tile" (click)="this.makeMove(8)">{{this.options[this.board[8]]}}</div>
+            <div class="tile" (click)="this.makeMove(0)">{{this.options[this.board[0] + 1]}}</div>
+            <div class="tile" (click)="this.makeMove(1)">{{this.options[this.board[1] + 1]}}</div>
+            <div class="tile" (click)="this.makeMove(2)">{{this.options[this.board[2] + 1]}}</div>
+            <div class="tile" (click)="this.makeMove(3)">{{this.options[this.board[3] + 1]}}</div>
+            <div class="tile" (click)="this.makeMove(4)">{{this.options[this.board[4] + 1]}}</div>
+            <div class="tile" (click)="this.makeMove(5)">{{this.options[this.board[5] + 1]}}</div>
+            <div class="tile" (click)="this.makeMove(6)">{{this.options[this.board[6] + 1]}}</div>
+            <div class="tile" (click)="this.makeMove(7)">{{this.options[this.board[7] + 1]}}</div>
+            <div class="tile" (click)="this.makeMove(8)">{{this.options[this.board[8] + 1]}}</div>
         </div>
         <button class="reset-button" (click)="this.resetGame()">Reset Game</button>
     </div>
