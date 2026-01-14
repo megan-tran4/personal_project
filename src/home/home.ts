@@ -3,10 +3,11 @@ import { MatTabsModule } from '@angular/material/tabs';
 import  { Homepage } from '../tab content/homepage/homepage';
 import { Experiences } from "../tab content/experiences/experiences";
 import { Projects } from "../tab content/projects/projects";
+import { About } from "../tab content/about/about";
 
 @Component({
   selector: 'app-home',
-  imports: [MatTabsModule, Homepage, Experiences, Projects],
+  imports: [MatTabsModule, Homepage, Experiences, Projects, About],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

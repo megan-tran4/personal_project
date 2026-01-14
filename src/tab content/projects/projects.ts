@@ -19,7 +19,7 @@ export class Projects {
       date: 'Dec 2023',
       description: 'This app aimes to streamline the call light system by allowing patients to make more specific requests. This app includes icons for accessibility to those who may not be fluent in English.',
       tools: ['XCode', 'Firebase', 'Figma'],
-      images: ['images/kalcom-1.jpeg', 'images/IMG_8176.png']
+      images: ['images/kalcom-1.jpeg', 'images/kalcom-3.png']
     }
   ]
   
