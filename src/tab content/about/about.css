@@ -5,9 +5,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     position: relative;
-    white-space: wrap;   
-    display: flex;
-    justify-content: center;
+    white-space: wrap;  
 }
 
 .card-body {
@@ -15,28 +13,13 @@
     text-align: left;
 }
 
-.board {
+.main {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    max-width: 300px;
+    grid-template-columns: 50% 50%;
 }
 
-.tile {
-    border: 1px solid #ccc;
-    min-width: 100px;
-    min-height: 100px;
+.grid-item {
     display: flex;
+    padding-top: 10%;
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 70px;
-}
-
-
-
-.tile.x::before,
-.tile.x::after {
-    content: '';
-    width: 15px;
-    height: 100px;
 }
