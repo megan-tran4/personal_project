@@ -6,9 +6,16 @@
     overflow: hidden;
     position: relative;
     white-space: wrap;   
+    
 }
 
 .card-body {
     padding: 30px;
     text-align: left;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s;
+    background-color: #EBDBEC;
 }

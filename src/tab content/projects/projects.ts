@@ -30,7 +30,7 @@ export class Projects {
       title: 'CTA Ventra Remake',
       date: 'Dec 2025',
       tools: ['Figma'],
-      image: 'images/ventra-cover.png',
+      image: './images/ventra-cover.png',
       link: '/Ventra'
     }, {
       title: 'Social Spotify',
