@@ -3,6 +3,7 @@ import { ProjDisplay } from "../../components/proj-display/proj-display";
 import { CommonModule } from '@angular/common';
 import { CarouselModule } from 'primeng/carousel';
 import { ProjectPreview } from "../../components/project-preview/project-preview";
+import { link } from 'fs';
 
 @Component({
   selector: 'app-projects',
@@ -30,11 +31,13 @@ export class Projects {
       date: 'Dec 2025',
       tools: ['Figma'],
       image: 'images/ventra-cover.png',
+      link: '/Ventra'
     }, {
       title: 'Social Spotify',
       date: 'Oct 2025',
       tools: ['Figma'],
-      image: '/images/spotify-cover.png',
+      image: './images/spotify-cover.png',
+      link: '/Spotify'
     }
   ]
 }

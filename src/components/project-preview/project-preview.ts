@@ -13,11 +13,12 @@ export class ProjectPreview {
 
   goToProject(link: string) {
     console.log("Navigating to project:", link);
-    this.router.navigate(['/Ventra']);
+    this.router.navigate([link]);
   } 
   @Input() title!: string;
   @Input() date!: string;
   @Input() tools!: string;
   @Input() image!: string;
+  @Input() link!: string;
 
 }

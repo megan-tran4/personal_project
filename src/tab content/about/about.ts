@@ -11,6 +11,6 @@ export class About {
 
   languages = ['C++', 'Python', 'Javascript', 'Java', 'HTML', 'CSS', 'Swift', 'SQL'];
   frameworks = ['AngularJS', 'Github', 'Figma', 'Jupyter Notebook', 'Anaconda', 'XCode'];
-  courses = {'CS225' : 'Data Structures and Algorithms', 'CS361' : 'Probability and Statistics for Computer Science'};
+  courses = {'CS225' : 'Data Structures and Algorithms', 'CS357' : 'Numerical Methods in Computer Science', 'CS361' : 'Probability and Statistics for Computer Science'};
 
 }
