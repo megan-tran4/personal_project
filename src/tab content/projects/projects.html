@@ -1,47 +1,15 @@
 <div class="main">
-    <div class="row">
     <h1>Design Projects</h1>
-    <div class="projects">
-        <p-carousel 
-        [value]="design_projects"
-        [numVisible]="2"
-        [numScroll]="1"
-        [circular]="true"
-        [showIndicators]="true"
-        [showNavigators]="true">
-            <ng-template pTemplate="item" let-project>
-                <app-proj-display
-                    [name]="project.title"
-                    [date]="project.date"
-                    [description]="project.description"
-                    [tools]="project.tools"
-                    [images]="project.images">
-                </app-proj-display>
-            </ng-template>
-        </p-carousel>
-    </div>
-    </div>
     <div class="row">
-    <h1>Tech Projects</h1>
-    <div class="projects">
-        <p-carousel
-        [value]="tech_projects"
-        [numVisible]="2"
-        [numScroll]="1"
-        [circular]="true"
-        [showIndicators]="true"
-        [showNavigators]="true">
-            <ng-template pTemplate="item" let-project>
-                <app-proj-display
-                    [number] = "project.number"
-                    [name]="project.title"
-                    [date]="project.date"
-                    [description]="project.description"
-                    [tools]="project.tools"
-                    [images]="project.images">
-                </app-proj-display>
-            </ng-template>
-        </p-carousel>
+    
+    <div class="projects" *ngFor ="let project of design_projects">
+        <app-project-preview
+            [title]="project.title"
+            [date]="project.date"
+            [tools]="project.tools.join(', ')"
+            [image]="project.image"> 
+        </app-project-preview>
     </div>
     </div>
+    
 </div>

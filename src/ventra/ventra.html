@@ -1,0 +1,88 @@
+<div class="main"> 
+    <img src="/images/ventra-cover.png" alt="Ventra Cover" width="200"/>
+    <h1>Ventra UX Case Study</h1>
+    <div class="information" style="display: grid; grid-template-columns: 1fr 1fr 1fr;">
+        <h2>Role:</h2>
+        <h2>Duration:</h2>
+        <h2>Tools:</h2>
+        <p>UX Designer</p>
+        <p>Jan 2023 - Apr 2023</p>
+        <p>Figma, Figjam</p>
+
+    </div>
+    
+    <h3>Context</h3>
+    <p>Ventra is the official app for the Chicago public transportation system. 
+        Although it is the official app, both residents and non-resident users struggle to navigate through the app. 
+        Many residents stated that they only use the app to add money to their card, ignoring all the navigation features on the app. 
+        The crowding dashboard is also very hidden and requires navigating to a browser, making it a highly unused feature. 
+    </p>
+    <h3>1. Research</h3>
+    <p>We completed 12 interviews from people who have used Ventra to assist with their trips around Chicago. We found the following trends:</p>
+    <img src="/images/ventra-figjam.png" alt="Ventra Research Findings" width="600"/>
+    
+    <p>Through this, we came up with the following HMW questions:</p>
+    <div style="margin-left:5%;">
+    <ol>
+        <li><p>HMW improve the app’s usability for new Chicago residents/users?</p></li>
+        <li><p>HMW make it easier for users to plan routes and trips all within the same app?</p></li>
+        <li><p>HMW reorganize features to be more easily accessible/more obvious to users?</p></li>
+        <li><p>HMW make the navigation and payment process more cohesive/smooth for users?</p></li>
+    </ol>
+    </div>
+    <p>Using these interviews, we also found some of the user experiences and journeys through navigation</p>
+    <img src="/images/ventra-persona.png" alt="Ventra User Persona" width="600"/>
+    <img src="/images/ventra-journey.png" alt="Ventra User Journey Map" width="600"/>
+    <h3>2. Ideation</h3>
+    <p>We began to ideate how to improve the app. 
+        Since many people found issues with the navigation of the app, we decided to start with the information architecture:</p>
+    <img src="/images/infoarch.png" alt="Ventra Information Architecture" width="800"/>
+    <p> Using this new information architecture, we began to develop new low-fidelity designs.</p>
+    <p>I worked on creating the map portion, seen here:</p>
+    <p-carousel class="card-image"
+        [value]="lowFis"
+        [numVisible]=2
+        [circular]="true"
+        [autoplayInterval]="5000" >
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item" [alt]="'Image ' + (highFis.indexOf(item) + 1)"/>
+
+        </ng-template>
+    </p-carousel>
+
+    <p>The following are some of the screens my teammates were able to create:</p>
+    <p-carousel class="card-image" style="width: 75%;"
+        [value]="otherLowFis"
+        [numVisible]=3
+        [circular]="true"
+        [autoplayInterval]="5000" >
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item" [alt]="'Image ' + (highFis.indexOf(item) + 1)"/>
+
+        </ng-template>
+    </p-carousel>
+
+    <h3>3. Design</h3>
+    <p>We then developed our high-fidelity prototypes. Here are my high-fidelity prototypes:</p>
+    <p-carousel class="card-image"
+        [value]="highFis"
+        [numVisible]=2
+        [circular]="true"
+        [autoplayInterval]="5000" >
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item" [alt]="'Image ' + (highFis.indexOf(item) + 1)"/>
+
+        </ng-template>
+    </p-carousel>
+    <p>Here are some of the screens from the rest of my team:</p>
+     <p-carousel class="card-image" style="width: 90%;"
+        [value]="otherHighFis"
+        [numVisible]=4
+        [circular]="true"
+        [autoplayInterval]="5000" >
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item" [alt]="'Image ' + (highFis.indexOf(item) + 1)"/>
+
+        </ng-template>
+    </p-carousel>
+</div>

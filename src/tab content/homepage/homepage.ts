@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Projects } from "../projects/projects";
 
 @Component({
   selector: 'app-homepage',
-  imports: [],
+  imports: [Projects],
   templateUrl: './homepage.html',
   styleUrl: './homepage.css',
 })
