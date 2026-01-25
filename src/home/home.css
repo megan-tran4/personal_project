@@ -86,7 +86,7 @@
     backdrop-filter: blur(100px);
 }
 
-.math-tab-group {
+.mat-tab-group {
     position: relative;
     z-index: 1;  
 }

@@ -4,8 +4,7 @@ import { Home } from '../home/home';
 import { Spotify } from '../spotify/spotify';
 
 export const routes: Routes = [ 
-    {path: '', redirectTo: 'home', pathMatch: 'full'},
-    {path: 'home', component: Home},
+    {path: '', component: Home},
     {path:'Ventra', component: Ventra},
     {path: 'Spotify', component: Spotify}
 ];
